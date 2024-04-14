@@ -1,0 +1,5 @@
+/data
+**/build
+**/__pycache__
+.vscode
+private*

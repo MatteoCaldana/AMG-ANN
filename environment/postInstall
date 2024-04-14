@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -e
+
+MKV="2024.0"
+MK="mk-${MKV}-full.tar.gz"
+
+wget https://github.com/pcafrica/mk/releases/download/v${MKV}/${MK}
+tar xvzf ${MK} -C / && rm ${MK}
+
+printf "\n# mk.\n\
+source /u/sw/etc/profile\n\
+module load gcc-glibc dealii vtk scipy eigen tbb" >> ${HOME}/.bashrc
+
+pip install seaborn tensorflow==2.11
