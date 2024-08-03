@@ -1,0 +1,2 @@
+batch_size,norm_mode,epochs,inputs,tgt,join_on,pretrain,opt,loss,val_split,act,view_size,view_type,patience,learn_err
+32,pure_log,1,log2ndof;theta;degree,tnl,dim;ndof;mesh_ref;degree;sol_id;sol_pattern_size;epsv;mode,/pretrain-model.h5,adam,mse,0.0,relu,75,sum+max+c,5,0

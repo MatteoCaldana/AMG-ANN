@@ -1,4 +1,7 @@
-/data
+/data/models
+/data/paper-plots
+/data/processed
+/data/raw
 **/build
 **/__pycache__
 .vscode
